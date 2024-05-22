@@ -1,0 +1,38 @@
+use_argument_parser: False
+# data_dir: '/media/farzeen/sam/sam/titan_data/dataset/PN/'
+# dataset: 'titan'
+# out_dir: '/home/farzeen/work/aa_postdoc/intent/PTINet/PTINet/output/'
+# data_dir: '/home/farzeen/work/aa_postdoc/intent/JAAD/PN/'
+data_dir: '/home/farzeen/work/aa_postdoc/datasets/Dataset/PIE/PNN/'
+dataset: 'pie'
+out_dir: '/home/farzeen/work/aa_postdoc/intent/PTINet/PTINet/output/'
+
+
+input: 5 # help='Input sequence length in frames',
+output: 5 #help='Output sequence length in frames',
+stride: 5 #help='Input and output sequence stride in frames',
+skip: 1 
+    # data loading / saving           
+dtype: 'test'
+from_file: False       
+save: True
+loader_workers: 0
+loader_shuffle: False
+pin_memory: False
+prefetch_factor: 10
+    # training
+gpu: 0
+device: 'cuda'
+batch_size: 1 # 100
+n_epochs: 100
+lr: 0.001 #1e-5lse
+lr_scheduler: False
+    # network
+hidden_size: 512
+hardtanh_limit: 100
+use_image: True
+image_network: 'clstm'
+use_attribute: True
+use_opticalflow: True
+
+
