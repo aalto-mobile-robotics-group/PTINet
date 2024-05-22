@@ -8,8 +8,8 @@ import torchvision.transforms as transforms
 import numpy as np
 from torchvision.models import ResNet50_Weights
 from torchvision.models import ResNet18_Weights
-from clstm import*
-from vae import*
+from model.clstm import*
+from model.vae import*
 
 
 
