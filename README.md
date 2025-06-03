@@ -64,7 +64,7 @@ cd RAFT
 pip install -r requirements.txt
 ```
 Follow the RAFT documentation to obtain optical flow for JAAD and PIE dataset.
-### Step 2: Organise Data
+### Step 3: Organise Data
 
 ```
 PTINet/
@@ -78,7 +78,7 @@ PTINet/
     └── TITAN/
 ```
 
-### Step 3: Preprocess
+### Step 4: Preprocess
 
 ```bash
 python preprocess_data.py --dataset jaad
